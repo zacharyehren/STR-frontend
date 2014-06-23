@@ -1,0 +1,30 @@
+#footer {
+  background: #212721;
+  color: #80807C;
+  .content {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 10px solid;
+    border-color: @navColorDesktop;
+
+    @media (max-width: @screen-sm-max) {
+      border-color: @navColorTablet;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      border-color: @navColorMobile;
+    }
+
+    h1 {
+      color: #CCC;
+    }
+    a {
+      color: #CCC;
+
+      &:hover {
+        color: #CCC;
+        text-decoration: none;
+      }
+    }
+  }
+}

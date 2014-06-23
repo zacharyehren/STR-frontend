@@ -1,0 +1,73 @@
+.mcf-navbar {
+  .navbar-header {
+    @media (max-width: @screen-xs-max) {
+      background: @navColorMobile;
+    }
+    .icon-bar {
+      background: white;
+    }
+  }
+  .nav {
+    border-top: 10px solid;
+    border-color: @navColorDesktop;
+    padding: 70px 15px 20px;
+
+    @media (max-width: @screen-sm-max) {
+      border-color: @navColorTablet;
+      padding-top: 40px;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      border: 0;
+      padding-top: 0px;
+    }
+
+    li {
+      padding: 0;
+      a {
+
+        &:hover {
+          background: transparent;
+          @media (max-width: @screen-xs-max) {
+            border-color: #DDD;
+          }
+        }
+        padding: 20px 0 0 0;
+        width: 85%;
+        @media (max-width: @screen-xs-max) {
+          padding: 15px 0;
+          width: 100%;
+        }
+
+      }
+      &.active {
+        a {
+          border-color: @navColorDesktop;
+
+          @media (max-width: @screen-sm-max) {
+            border-color: @navColorTablet;
+          }
+
+          @media (max-width: @screen-xs-max) {
+            border-color: @navColorMobile;
+          }
+        }
+      }
+      @media (max-width: @screen-xs-max) {
+        &:first-child {
+          a {
+            border: 0;
+          }
+        }
+        &:last-child {
+          a {
+            border-bottom: 1px solid #DDD;
+          }
+        }
+      }
+    }
+  }
+  .navbar-brand {
+    padding: 80px 0 15px 0;
+  }
+}

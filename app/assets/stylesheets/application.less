@@ -1,0 +1,80 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+h1,h2,h3 {
+  font-family: "Playfair Display", sans-serif;
+}
+p {
+  font-size: 22px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .header {
+    .title {
+      width: 95%;
+      @media (max-width: @screen-sm-max) {
+        width: 100%;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .view-all {
+    @media (max-width: @screen-sm-max) {
+      padding-top: 20px;
+
+      a {
+        color: #000;
+        font-size: 18px;
+
+        &:hover {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .more-link {
+    padding-left: 0;
+  }
+}
+
+.title {
+  border-top: 1px solid;
+  border-color: #DDD;
+  padding-top: 20px;
+  font-size: 22px;
+  padding-left: 0;
+  color: #000;
+  display: block;
+}
+
+a.title {
+  &:hover {
+    color: #000;
+    text-decoration: none;
+    border-color: @navColorDesktop;
+
+    @media (max-width: @screen-sm-max) {
+      border-color: @navColorTablet;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      border-color: @navColorMobile;
+    }
+  }
+}
+
+#logo {
+  background: url(mcf-logo.svg) no-repeat center center;
+  width: 100px;
+  height: 50px;
+}
+#str-logo {
+  background: url(sharethrough-logo-white.png) no-repeat center center;
+  width: 203px;
+  height: 40px;
+  margin-bottom: 50px;
+}
