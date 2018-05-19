@@ -21,7 +21,7 @@
 
 #card-mobile-style() {
   .child {
-    @media screen and (max-width: 767px) {
+    @media (max-width: @screen-xs-max) {
       color: #fff;
       position: absolute;
       bottom: 10px;
@@ -30,13 +30,13 @@
     }
   }
   .parent {
-    @media screen and (max-width: 767px) {
+    @media (max-width: @screen-xs-max) {
       position: relative;
       display: inline-block;
     }
   }
   .color {
-    @media screen and (max-width: 767px) {
+    @media (max-width: @screen-xs-max) {
       color: #fff
     }
   }
