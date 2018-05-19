@@ -3,15 +3,41 @@
   .image {
     margin: 0 auto;
     .info {
-
       .source {
         text-transform: uppercase;
         font-weight: 600;
         color: #555;
+        #mobile-style .color
       }
+      #mobile-style .child
     }
     p {
       font-size: 18px;
+    }
+  }
+  #mobile-style .parent
+}
+
+
+#mobile-style() {
+  .child {
+    @media screen and (max-width: 767px) {
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+    }
+  }
+  .parent {
+    @media screen and (max-width: 767px) {
+      position: relative;
+      display: inline-block;
+    }
+  }
+  .color {
+    @media screen and (max-width: 767px) {
+      color: #fff
     }
   }
 }
